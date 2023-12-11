@@ -34,8 +34,6 @@ jobs:
       matrix:
         os: [windows-latest]
         python-version: ["3.12"]
-    env:
-      CIBW_SKIP: "*-win32"
     steps:
     - name: Checkout library
       uses: actions/checkout@v3
