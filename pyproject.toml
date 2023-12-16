@@ -30,6 +30,10 @@ zip_safe = "true"
 [project.urls]
 homepage = "https://github.com/uuinfolab/py_multinet"
 
+[tool.cibuildwheel]
+# Switch to using build
+build-frontend = "build"
+
 # Use delvewheel on windows
 # [tool.cibuildwheel.windows]
 # before-build = [
