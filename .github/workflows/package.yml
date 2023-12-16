@@ -47,7 +47,7 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
 
-    - uses: pypa/cibuildwheel@v2.13.0
+    - uses: pypa/cibuildwheel@v2.16.2
       env:
         CIBW_ARCHS_MACOS: x86_64
         CIBW_ARCHS_WINDOWS: all
