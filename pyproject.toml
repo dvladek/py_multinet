@@ -34,10 +34,10 @@ homepage = "https://github.com/uuinfolab/py_multinet"
 # Switch to using build
 build-frontend = "build"
 
-# Use delvewheel on windows
-# [tool.cibuildwheel.windows]
-# before-build = [
-#    "pip install delvewheel",
-#    "if exist build rmdir /s /q build",
-#]
-# repair-wheel-command = "delvewheel repair -w {dest_dir} {wheel}"
+Use delvewheel on windows
+[tool.cibuildwheel.windows]
+before-build = [
+    "pip install delvewheel",
+    "if exist build rmdir /s /q build",
+]
+repair-wheel-command = "delvewheel repair -w {dest_dir} {wheel}"
